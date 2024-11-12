@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Restaurant Reservation</title>
+    <link rel="stylesheet" href="Reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+      <h1>Welcome to Illyrian Castle</h1>
+      <p>Experience the finest dining experience!</p>
+  </header>
+
+  <section class="main-content">
+      <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d733.7698823223984!2d21.162915109780556!3d42.63847393346312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549f2a4db329b5%3A0x37dea000b0d17fb!2sIllyrian%20Castle%20Restaurant!5e0!3m2!1sen!2sus!4v1731099186744!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <section class="reservation-form">
+          <h2>Book Your Table</h2>
+          <form id="reservationForm" onsubmit="submitReservation(event)">
+              <div class="input-group">
+                  <i class="fa fa-calendar"></i>
+                  <input type="date" id="date" placeholder="Date" required>
+              </div>
+              <div class="input-group">
+                  <i class="fa fa-clock"></i>
+                  <input type="time" id="time" placeholder="Time" required>
+              </div>
+              <div class="input-group">
+                  <i class="fa fa-users"></i>
+                  <input type="number" id="guests" min="1" max="20" placeholder="Number of Guests" required>
+              </div>
+              <div class="input-group">
+                  <i class="fa fa-user"></i>
+                  <input type="text" id="name" placeholder="Name" required>
+              </div>
+              <div class="input-group">
+                  <i class="fa fa-phone"></i>
+                  <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="Phone" required>
+              </div>
+              <button type="submit">Reserve Now</button>
+          </form>
+      </section>
+  </section>
+
+  <section class="confirmation" id="confirmationMessage" style="display: none;">
+      <h3>Reservation Confirmed!</h3>
+      <p>Thank you for booking a table. We look forward to serving you.</p>
+  </section>
+
+  <script src="Reservation.js"></script>
+</body>
+</html>

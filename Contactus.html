@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Contactus.css">
+</head>
+<body>
+    <div class="main">
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>Have questions, feedback, or just want to say hello? Fill out the form below, and we'll get back to you shortly.</p>
+            
+            <form id="contactForm" class="contact-form" onsubmit="return handleSubmit(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+    </div>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); 
+            
+            if(confirm("Your message was sent successfully!")){
+            
+
+            
+            window.location.href = "Homepage.html";
+        }
+        }
+    </script>
+</body>
+</html>

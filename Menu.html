@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+    <div class="nav-menu">
+        <img src="restaurant.png" class="logo" onclick="location.href='Homepage.html'">
+        <div class="nav-txt">
+            <div class="list">
+                <span onclick="location.href='Homepage.html'">Home</span>
+                <span  onclick="scrollToMenu()" style="color: orange;">Menu Page</span>
+                <span onclick="location.href='Contactus.html'">Contact</span>
+                <button type="button" class="btn btn-warning" onclick="location.href='Reservation.html'">BOOK A TABLE</button>
+            </div>
+        </div>
+    </div>
+
+ 
+    <div id="menu" class="menu-section container mt-5">
+        <h1 class="menu-title">Our Menu</h1>
+
+      
+        <section class="menu-category">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <img src="buffalo.png" alt="Appetizer" class="menu-img">
+                <div class="menu-details">
+                    <h3>Buffalo Cauliflower Wings</h3>
+                    <p> Crispy cauliflower florets coated in a spicy Buffalo sauce, perfect for those craving a vegetarian twist on classic wings. Served with ranch or blue cheese dip.</p>
+                    <p>Ingredients: Cauliflower, flour, cornstarch, milk or plant milk, Buffalo sauce, garlic powder, paprika, salt, pepper, ranch or blue cheese dip.</p>
+                    <span class="price">$6.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="mushrooms.png" alt="Appetizer" class="menu-img">
+                <div class="menu-details">
+                    <h3>Mouth-Watering Stuffed Mushrooms</h3>
+                    <p> Juicy mushroom caps stuffed with a savory blend of breadcrumbs, cheese, garlic, and herbs, then baked until golden and bubbly. These make a delicious and satisfying bite-sized appetizer.</p>
+                    <p>Ingredients: Button or cremini mushrooms, breadcrumbs, cream cheese or Parmesan, garlic, parsley, thyme, olive oil, salt, pepper.</p>
+                    <span class="price">$11.95</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Caprese.png" alt="Appetizer" class="menu-img">
+                <div class="menu-details">
+                    <h3>Caprese Skewers</h3>
+                    <p>A refreshing and elegant appetizer featuring skewers of cherry tomatoes, fresh mozzarella, and basil, drizzled with a balsamic glaze. Simple, yet packed with flavor!</p>
+                    <p>Ingredients: Cherry tomatoes, fresh mozzarella balls, fresh basil leaves, balsamic glaze, olive oil, sea salt, black pepper.</p>
+                    <span class="price">$2.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Dumplings.png" alt="Appetizer" class="menu-img">
+                <div class="menu-details">
+                    <h3>Steamed Dumplings</h3>
+                    <p> Tender dumplings filled with a flavorful mixture of minced meat or vegetables, steamed to perfection and served with a soy-based dipping sauce.</p>
+                    <p>Ingredients: Dumpling wrappers, ground pork or chicken (or mushrooms and cabbage for veggie version), green onions, garlic, ginger, soy sauce, sesame oil, dipping sauce (soy sauce, rice vinegar, chili oil).</p>
+                    <span class="price">$6.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="quesadilla.png" alt="Appetizer" class="menu-img">
+                <div class="menu-details">
+                    <h3>Quesadilla</h3>
+                    <p> A warm and crispy quesadilla filled with gooey melted cheese and your choice of fillings, such as grilled chicken, sautéed peppers, and onions. Served with sour cream, salsa, and guacamole.</p>
+                    <p>Ingredients: Flour tortillas, shredded cheese (cheddar, Monterey Jack), chicken or steak (optional), bell peppers, onions, sour cream, salsa, guacamole.</p>
+                    <span class="price">$8.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Meze.png" alt="Appetizer" class="menu-img">
+                <div class="menu-details">
+                    <h3>Mezze Platter</h3>
+                    <p>A vibrant platter of Mediterranean delights, featuring a variety of dips and spreads, fresh and pickled vegetables, and warm pita bread. Perfect for sharing!</p>
+                    <p>Ingredients: Hummus, baba ganoush, tzatziki, falafel, stuffed grape leaves, marinated olives, cucumber, cherry tomatoes, carrots, pickles, pita bread.</p>
+                    <span class="price">$20.00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mains -->
+        <section class="menu-category">
+            <h2>Main Courses</h2>
+            <div class="menu-item special-offer">
+                <img src="Grilled-Ribeye.png" alt="Main Course" class="menu-img">
+                <div class="menu-details">
+                    <h3>Grilled Ribeye Steak</h3>
+                    <p>A perfectly grilled ribeye steak with a robust, savory flavor and marbling that melts in your mouth. Served with garlic butter, roasted potatoes, and a side of seasonal vegetables. </p>
+                     <p>Ingredients: Prime ribeye cut, garlic, rosemary, thyme, sea salt, black pepper.</p>
+                    <span class="price">$18.50</span>
+                </div>
+                <span class="offer-tag">Seasonal Special</span>
+                
+            </div>
+            <div class="menu-item special-offer">
+                <img src="Parmesan.png" alt="Main Course" class="menu-img">
+                <div class="menu-details">
+                    <h3>Chicken Parmesan</h3>
+                    <p> Breaded chicken breast topped with marinara sauce and melted mozzarella and Parmesan cheese, served over a bed of spaghetti. A comforting Italian-American classic.</p>
+                    <p>Ingredients: Chicken breast, breadcrumbs, Parmesan cheese, mozzarella cheese, marinara sauce, Italian seasoning, garlic, spaghetti, basil.</p>
+                    <span class="price">$18.50</span>
+                </div>
+                
+            </div>
+            <div class="menu-item special-offer">
+                <img src="Pasul.png" alt="Main Course" class="menu-img">
+                <div class="menu-details">
+                    <h3> Jani me Fasule (Bean Stew)</h3>
+                    <p> A classic Albanian bean stew, cooked with white beans, tomatoes, and onions in a hearty broth. It’s a staple of Albanian cuisine, especially during colder months.</p>
+                    <p>Ingredients: White beans, tomatoes, onions, carrots, olive oil, bay leaves, salt, and pepper.</p>
+                    <span class="price">$3.00</span>
+                </div>
+                <span class="offer-tag">Seasonal Special</span>
+                
+            </div>
+            <div class="menu-item special-offer">
+                <img src="Speca.png" alt="Main Course" class="menu-img">
+                <div class="menu-details">
+                    <h3> Speca të Mbushura (Stuffed Peppers)</h3>
+                    <p>Description: Bell peppers filled with a savory mixture of rice, ground meat, onions, and spices, then baked until tender. It’s a popular dish often served with yogurt on the side.</p>
+                    <p>Ingredients: Bell peppers, rice, ground beef or lamb, onions, tomatoes, parsley, olive oil, and seasonings.</p>
+                    <span class="price">$5.00</span>
+                </div>
+
+                
+            </div>
+            <div class="menu-item special-offer">
+                <img src="Orizmepul.png" alt="Main Course" class="menu-img">
+                <div class="menu-details">
+                    <h3>Pilaf me Mish (Rice Pilaf with Meat)</h3>
+                    <p> A comforting rice dish, often cooked with lamb or chicken, and seasoned with simple spices. It’s an everyday meal that’s loved by many Albanians.</p>
+                    <p>Ingredients: Rice, lamb or chicken, onions, butter, salt, pepper, and bay leaves.</p>
+                    <span class="price">$6.00</span>
+                </div>
+                <span class="offer-tag">Seasonal Special</span>
+                
+            </div>
+            <div class="menu-item special-offer">
+                <img src="Flija.png" alt="Main Course" class="menu-img">
+                <div class="menu-details">
+                    <h3>Flia</h3>
+                    <p>Flia is a traditional Albanian dish, often enjoyed as a main course. It consists of multiple layers of thin pancakes made from a simple batter, which are baked until golden brown. Flia is known for its rich flavor, typically enhanced with creamy toppings or fillings.</p>
+                    <p>Ingredients: Flour, Water, Salt, Butter or Oil, Milk, Yogurt,Cheese</p>
+                    <span class="price">$10.00</span>
+                </div>
+
+                
+            </div>
+            <div class="menu-item special-offer">
+                <img src="Kebab.png" alt="Main Course" class="menu-img">
+                <div class="menu-details">
+                    <h3>Kebab</h3>
+                    <p>Kebab is a popular dish enjoyed worldwide, featuring marinated meat skewered and grilled to perfection. Its rich flavors and tender texture make it a favorite at street food stalls and upscale restaurants alike. Kebabs can be made with various meats and are often served with fresh vegetables and sauces.</p>
+                    <p>Meat (lamb, beef, chicken, or pork), Onions, Garlic (minced), Olive Oil, Spices (paprika, cumin, coriander, black pepper), Salt, Bell Peppers (optional), Tomatoes (optional), Flatbread, Yogurt or Tzatziki (for dipping).</p>
+                    <span class="price">$0.50 </span>
+                </div>
+
+                
+            </div>
+        </section>
+
+       
+        <section class="menu-category">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <img src="Lava.png" alt="Dessert" class="menu-img">
+                <div class="menu-details">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Rich chocolate cake with a gooey center, served with vanilla ice cream.</p>
+                    <p>Ingredients: Dark chocolate, Butter, Eggs, Sugar, Flour, Vanilla extract, Salt.</p>
+                    <span class="price">$7.50</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Baklava.png" alt="Dessert" class="menu-img">
+                <div class="menu-details">
+                    <h3>Baklava</h3>
+                    <p>A delightful Middle Eastern pastry made of layers of filo dough, filled with chopped nuts and sweetened with honey syrup.</p>
+                    <p>Ingredients: Filo pastry, Walnuts or pistachios, Butter, Sugar, Honey, Cinnamon, Lemon juice.</p>
+                    <span class="price">$6.50</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Tiramisu.png" alt="Dessert" class="menu-img">
+                <div class="menu-details">
+                    <h3>Tiramisu</h3>
+                    <p> An Italian classic, this layered dessert features coffee-soaked ladyfingers and a creamy mascarpone cheese mixture, dusted with cocoa powder.</p>
+                    <p>Ingredients: Espresso, Ladyfingers, Mascarpone cheese, Sugar, Eggs, Cocoa powder, Coffee liqueur.
+
+                    </p>
+                    <span class="price">$7.50</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Panna.png" alt="Dessert" class="menu-img">
+                <div class="menu-details">
+                    <h3>Panna Cotta</h3>
+                    <p> A creamy Italian dessert made from sweetened cream thickened with gelatin and often served with a fruit coulis.</p>
+                    <p>Ingredients: Heavy cream, Sugar, Gelatin, Vanilla bean or extract, Fresh berries or fruit puree for topping.</p>
+                    <span class="price">$7.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Cheescake.png" alt="Dessert" class="menu-img">
+                <div class="menu-details">
+                    <h3>Cheesecake</h3>
+                    <p>A rich and creamy dessert with a graham cracker crust, often topped with fruit, chocolate, or caramel.</p>
+                    <p>Ingredients: Cream cheese, Sugar, Eggs, Vanilla extract, Graham cracker crumbs, Butter, Sour cream (optional).</p>
+                    <span class="price">$8.50</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="FruitTart.png" alt="Dessert" class="menu-img">
+                <div class="menu-details">
+                    <h3>Fruit Tart</h3>
+                    <p>A beautiful pastry crust filled with creamy custard and topped with an array of fresh, colorful fruits.</p>
+                    <p>Ingredients: Tart shell (flour, butter, sugar, egg), Pastry cream (milk, sugar, eggs, vanilla), Fresh fruits (berries, kiwi, mango, etc.), Apricot glaze (optional).</p>
+                    <span class="price">$9.00</span>
+                </div>
+            </div>
+            
+        </section>
+
+        
+        <section class="menu-category">
+            <h2>Beverages</h2>
+            <div class="menu-item">
+                <img src="Lemonade.png" alt="Beverage" class="menu-img">
+                <div class="menu-details">
+                    <h3>House-Made Lemonade</h3>
+                    <p>Refreshing and zesty lemonade made with freshly squeezed lemons and a touch of sugar, served over ice.</p>
+                    <p>Ingredients: Fresh lemons, Sugar, Water, Ice.</p>
+                    <span class="price">$4.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="IcedTea.png" alt="Beverage" class="menu-img">
+                <div class="menu-details">
+                    <h3>Iced Tea</h3>
+                    <p>Brewed tea served chilled with a hint of lemon and sweetened to perfection, ideal for a hot day.</p>
+                    <span class="price">$3.50</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Sodas.png" alt="Beverage" class="menu-img">
+                <div class="menu-details">
+                    <h3>Soda (Coke, Sprite, Fanta)</h3>
+                    <p>Choose from classic sodas to quench your thirst.</p>
+                    <span class="price">$2.50</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Redwine.png" alt="Beverage" class="menu-img">
+                <div class="menu-details">
+                    <h3>Wine (Red/White)</h3>
+                    <p>Selection of house red and white wines, perfect for pairing with your meal.</p>
+                    <span class="price">$8.00 (glass) / $30.00 (bottle)</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="CraftBeer.png" alt="Beverage" class="menu-img">
+                <div class="menu-details">
+                    <h3>Craft Beer</h3>
+                    <p>A rotating selection of local craft beers, rich in flavor and character.</p>
+                    <span class="price">$6.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Coctails.png" alt="Beverage" class="menu-img">
+                <div class="menu-details">
+                    <h3>Cocktails</h3>
+                    <p>A choice of classic cocktails made with premium spirits and fresh ingredients. Ask your server for today's special!</p>
+                    <span class="price">$10.00</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function scrollToMenu() {
+            const menuSection = document.getElementById('menu');
+            menuSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        </script>
+</body>
+</html>
